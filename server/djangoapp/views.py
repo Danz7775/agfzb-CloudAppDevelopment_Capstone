@@ -7,6 +7,7 @@ from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib import messages
 from datetime import datetime
+
 import logging
 import json
 
@@ -16,9 +17,12 @@ logger = logging.getLogger(__name__)
 
 # Create your views here.
 
+# def home(request):
+#         return render(request, "djangoapp/home.html", {})
 
 # Create an `about` view to render a static about page
-# def about(request):
+def about(request):
+    return render(request, 'djangoapp/about.html', {})
 # ...
 
 
